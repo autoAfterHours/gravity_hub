@@ -1,0 +1,2 @@
+sequence:
+  - script: dal_pp_ip_workingdrg.py

@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Dallas/IPDIS/dal_pp_ipdis_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: dal_pp_int_test_ipdis.py
+    display: OBS Patient Status

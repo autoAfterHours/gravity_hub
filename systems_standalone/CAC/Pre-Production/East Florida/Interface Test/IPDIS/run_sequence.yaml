@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/East Florida/IPDIS/efd_pp_ipdis_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: efd_pp_test_ipdis.py
+    display: IPDIS Patient Status
