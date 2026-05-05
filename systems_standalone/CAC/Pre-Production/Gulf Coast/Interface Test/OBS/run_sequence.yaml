@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Gulf Coast/OBS/gcd_pp_obs_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: gcd_pp_int_test_obs.py
+    display: OBS Patient Status
