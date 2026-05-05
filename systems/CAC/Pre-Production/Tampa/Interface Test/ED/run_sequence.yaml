@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Tampa/ED/tam_pp_ed_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: tam_pp_int_test_ed.py
+    display: ED Patient Status & Various Document Types
