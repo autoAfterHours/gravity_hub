@@ -1,0 +1,9 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/IPDIS/mtx_qa_ipdis_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_ipdis_hold.py
+  - display: IPDIS - Hold
+  - script: mtx_qa_ipdis_finalcoded.py
+  - display: IPDIS - Final Code

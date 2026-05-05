@@ -1,0 +1,13 @@
+{
+    "CLI": "Clinical",
+    "Coding_Refs": "Coding References",
+    "ED": "ED",
+    "ED_Admit": "ED Admit",
+    "eMD": "eMD",
+    "IP": "Inpatient",
+    "IPDIS": "Inpatient Discharged",
+    "OBS": "Observation",
+    "RCR": "Recurring",
+    "SDC": "Same Day Care",
+    "SLR": "Second Level Review"
+}

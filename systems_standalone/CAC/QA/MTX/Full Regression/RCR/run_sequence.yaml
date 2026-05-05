@@ -1,0 +1,9 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/RCR/mtx_qa_rcr_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_rcr_hold.py
+  - display: RCR - Hold
+  - script: mtx_qa_rcr_finalcoded.py
+  - display: RCR - Final Code
