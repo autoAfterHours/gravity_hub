@@ -1,0 +1,7 @@
+{
+    "train_preprod_web5_core.py": "CAC Core Functionality",
+    "train_preprod_web5_himcoding.py": "HIM Coding Dashboard",
+    "train_preprod_web5_himcharger.py": "HIM Charger Dashboard",
+    "train_preprod_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "train_preprod_web5_cdi.py": "CDI Dashboard"
+}

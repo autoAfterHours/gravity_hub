@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Tristar/IP/tsd_pp_ip_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: tsd_pp_int_test_ip.py
+    display: IP Patient Status and Send Provider Query
