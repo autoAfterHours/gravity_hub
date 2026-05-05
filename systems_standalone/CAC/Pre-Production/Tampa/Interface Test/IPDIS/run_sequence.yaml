@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Tampa/IPDIS/tam_pp_ip_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: tam_pp_int_test_ipdis.py
+    display: IP Patient Status and Send Provider Query

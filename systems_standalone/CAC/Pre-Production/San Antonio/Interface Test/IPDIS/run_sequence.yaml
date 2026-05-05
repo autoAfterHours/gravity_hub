@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/San Antonio/IPDIS/san_pp_ip_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: san_pp_int_test_ipdis.py
+    display: IP Patient Status and Send Provider Query
