@@ -1,0 +1,9 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/IP/mtx_qa_ip_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_ip_workingdrg.py
+  - display: IP - Working DRG
+  - script: mtx_qa_ip_recode.py
+  - display: IP - Recode

@@ -1,0 +1,5 @@
+{
+    "mtx_qa_slr_hardhold.py": "SLR - Hard Hold",
+    "mtx_qa_slr_pbreview.py": "SLR - Prebill Review",
+    "mtx_qa_slr_reports.py": "SLR - Run Reports"
+}

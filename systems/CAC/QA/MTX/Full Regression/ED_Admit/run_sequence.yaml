@@ -1,0 +1,9 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/ED_Admit/mtx_qa_edadm_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_edadm_coded.py
+  - display: ED Admit
+
+

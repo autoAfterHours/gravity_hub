@@ -1,0 +1,11 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/SDC/mtx_qa_sdc_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+    - script: mtx_qa_sdc_hold.py
+    - display: SDC - Hold
+    - script: mtx_qa_sdc_coded.py
+    - display: SDC - Coded
+    - script: mtx_qa_sdc_finalcoded.py
+    - display: SDC - Final Code

@@ -1,0 +1,3 @@
+sequence:
+  - script: cerqa_emd_1stpass_assignment.py
+  - script: cerqa_emd_2ndpass_written.py

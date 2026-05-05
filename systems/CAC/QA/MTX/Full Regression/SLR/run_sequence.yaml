@@ -1,0 +1,12 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/SLR/mtx_qa_ipdis_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_slr_hardhold.py
+  - display: SLR - Hard Hold
+  - script: mtx_qa_slr_pbreview.py
+  - display: SLR - Prebill Review
+  - script: mtx_qa_slr_reports.py
+  - display: SLR - Reports
+
