@@ -1,0 +1,6 @@
+sequence:
+- display: ED Patient Status & Various Document Types
+  script: gcd_pp_int_test_ed.py
+test_data:
+  path: datasets\CAC\Pre-Production\Gulf Coast\ED\gcdpp_ed_accounts.xlsx
+  run_flag_col: Run

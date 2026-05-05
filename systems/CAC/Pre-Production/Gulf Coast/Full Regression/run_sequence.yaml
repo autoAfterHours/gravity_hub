@@ -1,0 +1,6 @@
+sequence:
+- script: gcd_pp_ed_scanned.py
+- display: ED - Scanned
+test_data:
+  path: test_data\generated\2026-04-30_22-02-31\MT5.6_JANSP1_26_TestPatients_MAYFR.26_CHRCODE.xlsx
+  run_flag_col: Run
