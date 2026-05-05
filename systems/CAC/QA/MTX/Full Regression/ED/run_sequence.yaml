@@ -1,0 +1,13 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/ED/mtx_qa_ed_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_ed_1sthold.py
+  - display: ED - Hold for H&P
+  - script: mtx_qa_ed_coded.py
+  - display: ED - WSS Pt.1
+  - script: mtx_qa_ed_2ndhold.py
+  - display: ED - 2nd Hold
+  - script: mtx_qa_ed_finalcoded.py
+  - display: ED - WSS Pt.2

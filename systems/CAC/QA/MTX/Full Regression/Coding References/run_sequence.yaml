@@ -1,0 +1,2 @@
+sequence:
+  - script: mtx_qa_codingrefs.py

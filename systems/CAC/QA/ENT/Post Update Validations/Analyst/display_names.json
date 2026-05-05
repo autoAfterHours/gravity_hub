@@ -1,0 +1,7 @@
+{
+    "entqa_web5_core.py": "CAC Core Functionality",
+    "entqa_web5_himcoding.py": "HIM Coding Dashboard",
+    "entqa_web5_himcharger.py": "HIM Charger Dashboard",
+    "entqa_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "entqa_web5_cdi.py": "CDI Dashboard"
+}
