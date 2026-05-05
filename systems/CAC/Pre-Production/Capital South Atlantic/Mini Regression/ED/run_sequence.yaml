@@ -1,0 +1,11 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Capital South Atlantic/ED/csa_pp_ed_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+ - script: csa_pp_ed_hold.py
+ - display: ED - Hold
+ - script: csa_pp_ed_finalcoded.py
+ - display: ED - Final Coded
+ - script: csa_pp_ed_recode.py
+ - display: ED - Recode
