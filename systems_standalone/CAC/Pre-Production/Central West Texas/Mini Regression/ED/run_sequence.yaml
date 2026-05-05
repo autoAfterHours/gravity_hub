@@ -1,0 +1,11 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Central West Texas/ED/cwt_pp_ed_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+ - script: cwt_pp_ed_1stpass_hold.py
+ - display: ED - Hold
+ - script: cwt_pp_ed_2ndpass_finalcoded.py
+ - display: ED - Final Coded
+ - script: cwt_pp_ed_3rdpass_recode.py
+ - display: ED - Recode

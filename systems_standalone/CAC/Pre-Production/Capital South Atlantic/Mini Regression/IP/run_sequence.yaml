@@ -1,0 +1,12 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Capital South Atlantic/ED/csa_pp_ip_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+ - script: csa_pp_ip_workingdrg.py
+ - display: IP - Add Finding & Working DRG"
+ - script: csa_pp_ip_newdrg.py
+ - display: IP - Validate New DRG
+ - script: csa_pp_ip_recode.py
+ - display: IP - Recode
+
