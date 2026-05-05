@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/QA/MTX/CLI/mtx_qa_cli_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: mtx_qa_cli_finalcoded.py
+  - display: CLI - Final Code
