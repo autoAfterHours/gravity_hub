@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/East Florida/IP/efd_pp_ip_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: efd_pp_test_ip.py
+    display: IP Patient Status and Send Provider Query

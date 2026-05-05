@@ -1,0 +1,7 @@
+test_data:
+  path: "datasets/CAC/Pre-Production/Capital South Atlantic/ED_Admit/cer_pp_edadm_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+ - script: cer_pp_edadm_coded.py
+ - display: ED Admit - Coded
