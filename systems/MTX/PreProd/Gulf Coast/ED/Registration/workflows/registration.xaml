@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PLACEHOLDER — Replace with your actual UiPath Registration workflow.
+
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │  ORBIT IN ARGUMENTS — declare these in the UiPath Studio Arguments  │
+  │  panel (Project > Arguments) so Orbit can inject them at runtime.   │
+  ├──────────────────────┬───────────┬────────┬────────────────────────┤
+  │ Name                 │ Direction │ Type   │ Description            │
+  ├──────────────────────┼───────────┼────────┼────────────────────────┤
+  │ ORBIT_EXCEL_PATH     │ In        │ String │ Full path to test data │
+  │ ORBIT_EXCEL_SHEET    │ In        │ String │ Sheet index/name ("0") │
+  │ ORBIT_RUN_ID         │ In        │ String │ Unique run identifier  │
+  │ ORBIT_CONTEXT_PATH   │ In        │ String │ Path to context.json   │
+  │ ORBIT_LOG_DIR        │ In        │ String │ Log output directory   │
+  │ ORBIT_SCRIPT_NAME    │ In        │ String │ Workflow display name  │
+  └──────────────────────┴───────────┴────────┴────────────────────────┘
+
+  READING TEST DATA:
+    Use "Excel Application Scope" with WorkbookPath = ORBIT_EXCEL_PATH.
+    Use "Read Range" to load rows into a DataTable.
+    Filter rows where the "Run" column = "Y" to get active accounts.
+    Each time this workflow runs it processes one account from the file.
+
+  WRITING OUTPUTS TO ORBIT (for downstream CAC scripts to read):
+    In a "Write Line" activity output:
+      "ORBIT_OUTPUT|patient_id=" + patientId
+    Orbit captures this from stdout and writes it to context.json.
+    CAC scripts read it from the outputs dict in that file.
+
+  REPEAT RUNS:
+    In run_sequence.yaml, set repeat: 5 to run this workflow 5 times
+    back-to-back before Orbit moves to the next step (e.g. Documentation).
+    Each iteration processes the next account in ORBIT_EXCEL_PATH.
+-->
+<Activity mc:Ignorable="sads"
+  x:Class="UiPath.WorkflowProject.Registration"
+  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugging/symbol"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence DisplayName="Registration — Placeholder" />
+</Activity>

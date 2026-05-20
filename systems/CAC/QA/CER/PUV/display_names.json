@@ -1,0 +1,12 @@
+{
+    "cerqa_app3.py": "CRS Codefinder",
+    "cerqa_app5.py": "CRS Config Utility",
+    "cerqa_web1.py": "WinAppLink",
+    "cerqa_web2.py": "WebCvConfig",
+    "cerqa_web4.py": "STS Version Info",
+    "cerqa_web5_core.py": "CAC Core Functionality",
+    "cerqa_web5_himcoding.py": "HIM Coding Dashboard",
+    "cerqa_web5_himcharger.py": "HIM Charger Dashboard",
+    "cerqa_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "cerqa_web5_cdi.py": "CDI Dashboard"
+}

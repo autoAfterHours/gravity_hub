@@ -1,0 +1,31 @@
+sequence:
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "FWDCWWPAPPCAC22B  (APP)"
+    env:
+      ORBIT_DH_ENVS: "Prod"
+      ORBIT_DH_SITE: "CWT"
+      ORBIT_DH_SERVER: "FWDCWWPAPPCAC22B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "FWDCWWPDBSCAC22B  (DB)"
+    env:
+      ORBIT_DH_ENVS: "Prod"
+      ORBIT_DH_SITE: "CWT"
+      ORBIT_DH_SERVER: "FWDCWWPDBSCAC22B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "FWDCWWPINTCAC22B  (INTERFACE)"
+    env:
+      ORBIT_DH_ENVS: "Prod"
+      ORBIT_DH_SITE: "CWT"
+      ORBIT_DH_SERVER: "FWDCWWPINTCAC22B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "FWDCWWPRPTCAC22B  (REPORT)"
+    env:
+      ORBIT_DH_ENVS: "Prod"
+      ORBIT_DH_SITE: "CWT"
+      ORBIT_DH_SERVER: "FWDCWWPRPTCAC22B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "FWDCWWPWEBCAC22B  (WEB)"
+    env:
+      ORBIT_DH_ENVS: "Prod"
+      ORBIT_DH_SITE: "CWT"
+      ORBIT_DH_SERVER: "FWDCWWPWEBCAC22B"

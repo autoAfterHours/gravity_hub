@@ -1,0 +1,12 @@
+{
+    "opk_preprod_app3.py": "CRS Codefinder",
+    "opk_preprod_app5.py": "CRS Config Utility",
+    "opk_preprod_web1.py": "WinAppLink",
+    "opk_preprod_web2.py": "WebCvConfig",
+    "opk_preprod_web4.py": "STS Version Info",
+    "opk_preprod_web5_core.py": "CAC Core Functionality",
+    "opk_preprod_web5_himcoding.py": "HIM Coding Dashboard",
+    "opk_preprod_web5_himcharger.py": "HIM Charger Dashboard",
+    "opk_preprod_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "opk_preprod_web5_cdi.py": "CDI Dashboard"
+}

@@ -1,0 +1,24 @@
+suite: Engineer PUV
+description: >
+  Executes the full CRS, Config Utility, and Dashboard CAC validation suite
+  for the Tristar (Pre-Production) pillar within the Orbit360 automation environment.
+
+sequence:
+  - script: tsd_pp_app3.py
+    display: Launch CRS
+    description: Runs the primary CRS validation sequence.
+  - script: tsd_pp_app5.py
+    display: Launch CRS COnfig Utility
+    description: Validates configuration utility and parameter setup.
+  - script: tsd_pp_web1.py
+    display: Launch WinAppLink
+    description: Runs the primary CRS validation sequence.
+  - script: tsd_pp_web2.py
+    display: Launch WebCvConfig
+    description: Verifies web configuration and connection parmeters.
+  - script: tsd_pp_web4.py
+    display: Launch Version Info
+    description: Confirms application build and version details.
+  - script: tsd_pp_web5.py
+    display: Launch 360 CAC Dashboard
+    description: Walks through post update validation steps. 

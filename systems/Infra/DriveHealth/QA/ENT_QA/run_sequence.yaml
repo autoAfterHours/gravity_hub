@@ -1,0 +1,31 @@
+sequence:
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWQAPPCAC08B  (APP)"
+    env:
+      ORBIT_DH_ENVS: "QA"
+      ORBIT_DH_SITE: "ENT_QA"
+      ORBIT_DH_SERVER: "XRDCWQAPPCAC08B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWQDBSCAC08B  (DB)"
+    env:
+      ORBIT_DH_ENVS: "QA"
+      ORBIT_DH_SITE: "ENT_QA"
+      ORBIT_DH_SERVER: "XRDCWQDBSCAC08B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWQINTCAC08B  (INTERFACE)"
+    env:
+      ORBIT_DH_ENVS: "QA"
+      ORBIT_DH_SITE: "ENT_QA"
+      ORBIT_DH_SERVER: "XRDCWQINTCAC08B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWQRPTCAC08B  (REPORT)"
+    env:
+      ORBIT_DH_ENVS: "QA"
+      ORBIT_DH_SITE: "ENT_QA"
+      ORBIT_DH_SERVER: "XRDCWQRPTCAC08B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWQWEBCAC08B  (WEB)"
+    env:
+      ORBIT_DH_ENVS: "QA"
+      ORBIT_DH_SITE: "ENT_QA"
+      ORBIT_DH_SERVER: "XRDCWQWEBCAC08B"

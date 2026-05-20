@@ -1,0 +1,12 @@
+{
+    "nas_prod_app3.py": "CRS Codefinder",
+    "nas_prod_app5.py": "CRS Config Utility",
+    "nas_prod_web1.py": "WinAppLink",
+    "nas_prod_web2.py": "WebCvConfig",
+    "nas_prod_web4.py": "STS Version Info",
+    "nas_prod_web5_core.py": "CAC Core Functionality",
+    "nas_prod_web5_himcoding.py": "HIM Coding Dashboard",
+    "nas_prod_web5_himcharger.py": "HIM Charger Dashboard",
+    "nas_prod_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "nas_prod_web5_cdi.py": "CDI Dashboard"
+}

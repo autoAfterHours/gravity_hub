@@ -1,0 +1,31 @@
+sequence:
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTAPPCAC23B  (APP)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "EFD"
+      ORBIT_DH_SERVER: "XRDCWWTAPPCAC23B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTDBSCAC23B  (DB)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "EFD"
+      ORBIT_DH_SERVER: "XRDCWWTDBSCAC23B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTINTCAC23B  (INTERFACE)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "EFD"
+      ORBIT_DH_SERVER: "XRDCWWTINTCAC23B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTRPTCAC23B  (REPORT)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "EFD"
+      ORBIT_DH_SERVER: "XRDCWWTRPTCAC23B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTWEBCAC23B  (WEB)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "EFD"
+      ORBIT_DH_SERVER: "XRDCWWTWEBCAC23B"

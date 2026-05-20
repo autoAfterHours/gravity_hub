@@ -1,0 +1,31 @@
+sequence:
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTAPPCAC00B  (APP)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "TRN"
+      ORBIT_DH_SERVER: "XRDCWWTAPPCAC00B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTDBSCAC00B  (DB)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "TRN"
+      ORBIT_DH_SERVER: "XRDCWWTDBSCAC00B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTINTCAC00B  (INTERFACE)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "TRN"
+      ORBIT_DH_SERVER: "XRDCWWTINTCAC00B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTRPTCAC00B  (REPORT)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "TRN"
+      ORBIT_DH_SERVER: "XRDCWWTRPTCAC00B"
+  - script: ../../DriveHealth_Final_All.ps1
+    display: "XRDCWWTWEBCAC00B  (WEB)"
+    env:
+      ORBIT_DH_ENVS: "PreProd"
+      ORBIT_DH_SITE: "TRN"
+      ORBIT_DH_SERVER: "XRDCWWTWEBCAC00B"

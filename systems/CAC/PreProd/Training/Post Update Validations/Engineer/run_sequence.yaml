@@ -1,0 +1,16 @@
+sequence:
+  - script: train_preprod_app3.py
+    display: CRS Codefinder
+    description: Runs the primary CRS validation sequence.
+  - script: train_preprod_app5.py
+    display: CRS Config Utility
+    description: Validates configuration utility and parameter setup.
+  - script: train_preprod_web1.py
+    display: WinAppLink
+    description: Runs the primary CRS validation sequence.
+  - script: train_preprod_web2.py
+    display: WebCvConfig
+    description: Verifies web configuration and connection parmeters.
+  - script: train_preprod_web4.py
+    display: STS Version Info
+    description: Confirms application build and version details.

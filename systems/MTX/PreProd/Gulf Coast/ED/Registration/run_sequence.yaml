@@ -1,0 +1,12 @@
+test_data:
+  path: "datasets/MTX/PreProd/Gulf Coast/ED/gcdpp_ed_accounts.xlsx"
+  run_flag_col: "Run"
+
+sequence:
+  - script: workflows/registration.xaml
+    display: Patient Registration
+    type: uipath
+    repeat: 1
+    # Set repeat to the number of patients to register before moving on.
+    # Example: repeat: 5 runs this workflow 5 times back-to-back, each
+    # time reading the next available account from ORBIT_EXCEL_PATH.

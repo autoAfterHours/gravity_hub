@@ -1,0 +1,213 @@
+ORBIT AUTOMATION PLATFORM — FULL ARCHITECTURE SUMMARY
+
+1. Overview
+Orbit is a Python-based orchestration platform (PyQt6 UI) designed to execute and coordinate modular automation “bricks” across multiple systems.
+
+Primary systems:
+- MTX (Meditech Expanse) → automated via UiPath
+- CAC (360 Encompass) → automated via Python + Playwright
+
+Orbit acts as the control plane, not the execution engine.
+
+2. Core Architecture
+Execution Model:
+UI (PyQt6)
+→ Job Selection (Division → Facility → Patient Type → Job Type)
+→ Orchestration Layer (Python)
+→ Execution Router
+   → Python Executor (Playwright / scripts)
+   → UiPath Executor (UiRobot.exe)
+→ Logging + Runtime Context + Reporting
+
+3. Modular “Brick” Design
+Each automation is a self-contained unit (Lego brick).
+
+Characteristics:
+- Single responsibility
+- Independently runnable
+- Accepts inputs
+- Produces outputs
+- Reusable across flows
+
+Examples:
+MTX (UiPath):
+- Registration
+- Documentation
+- Discharge
+- ABS checks
+
+CAC (Python):
+- Case validation
+- Dashboard check
+- Downstream verification
+
+4. Job Definition Model
+Jobs are defined via metadata (YAML or dict):
+- id
+- type (python | uipath)
+- script or process
+- phase
+- division
+- facility
+- patient_type
+- job_type
+
+5. Orchestration & Sequencing
+Sequences define ordered execution.
+
+Supported modes:
+- Single Job
+- Full Run
+- Resume Run
+- Retry Failed Steps
+
+6. Runtime Context System
+A shared context.json file acts as the single source of truth.
+
+Stores:
+- Session metadata
+- Step status
+- Inputs/outputs (patient_id, account_number, etc.)
+- Execution state
+- Timing data
+- Phase aggregation
+
+Location:
+runs/{session_id}/context.json
+
+7. Retry + Resume System
+Each step tracks:
+- status
+- attempts
+- checkpoint
+
+Features:
+- Resume from failed step
+- Retry per step
+- Retry only failed steps
+- Skip completed steps automatically
+
+8. UiPath Checkpointing
+UiPath jobs:
+- Read context.json
+- Resume based on checkpoint
+- Update checkpoint after major milestones
+
+Example checkpoints:
+- after_login
+- after_patient_search
+- after_registration
+
+9. Logging System
+Multi-layer logging:
+- UI log panel (real-time)
+- Run log file: runs/{session}/orbit.log
+- Step logs: runs/{session}/steps/{job_id}.log
+
+Format:
+[time] | LEVEL | message
+
+10. Embedded Status + Context View
+Logs include structured sections:
+
+Status:
+✔ success
+✖ failed
+⏳ running
+• pending
+
+Context:
+- patient_id
+- account_number
+- current_step
+
+11. Timing System
+Step-level:
+- start_time
+- end_time
+- duration_seconds
+
+Run-level:
+- run_start_time
+- run_end_time
+- total_duration_seconds
+
+12. Phase-Based Timing
+Each job belongs to a phase:
+- MTX
+- CAC
+
+Aggregated automatically:
+- total_duration per phase
+- step count per phase
+
+13. Run Report Export
+Generated per run:
+- report.json
+- report_steps.csv
+- report_phases.csv
+
+Contains:
+- Run summary
+- Step metrics
+- Phase metrics
+- Status and retries
+
+14. Trend Reporting
+Aggregates all run reports.
+
+Outputs:
+- Average run duration
+- Phase averages
+- Slowest steps
+- Retry frequency
+
+15. Trend Reporting as a Job
+Trend reporting is treated as a standard Orbit job:
+- type: python
+- phase: Reporting
+
+16. File + Asset Handling (UiPath)
+Assets live within Orbit structure:
+systems/MTX/.../uipath/assets/
+
+Orbit passes paths via inputs:
+- context_path
+- config_path
+
+17. Data Flow Between Systems
+Data passes via context:
+MTX (UiPath) writes patient_id
+CAC (Python) reads patient_id
+
+No direct coupling between jobs.
+
+18. Key Design Principles
+- Orbit is an orchestrator, not executor
+- Bricks are modular and reusable
+- Context is the single source of truth
+- Logging is centralized and structured
+- Execution is state-aware (resume + retry)
+- System is extensible
+
+19. Current Capability Summary
+Orbit supports:
+- Mixed execution (UiPath + Python)
+- Modular orchestration
+- Full sequencing
+- Retry + resume
+- UiPath checkpointing
+- Centralized logging
+- Step/run/phase timing
+- Run reporting (JSON + CSV)
+- Trend analytics
+
+20. Future-Ready Capabilities (Not yet implemented)
+- Scheduling
+- Beacon ingestion
+- Dashboard visualization
+- Multi-run trend UI
+- Environment-specific analytics
+
+FINAL SUMMARY
+Orbit is a stateful, modular, multi-engine automation orchestration platform capable of coordinating MTX (UiPath) and CAC (Python/Playwright) workflows with full observability, recovery, and analytics readiness.

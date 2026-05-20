@@ -1,0 +1,12 @@
+{
+    "cer_prod_app3.py": "CRS Codefinder",
+    "cer_prod_app5.py": "CRS Config Utility",
+    "cer_prod_web1.py": "WinAppLink",
+    "cer_prod_web2.py": "WebCvConfig",
+    "cer_prod_web4.py": "STS Version Info",
+    "cer_prod_web5_core.py": "CAC Core Functionality",
+    "cer_prod_web5_himcoding.py": "HIM Coding Dashboard",
+    "cer_prod_web5_himcharger.py": "HIM Charger Dashboard",
+    "cer_prod_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "cer_prod_web5_cdi.py": "CDI Dashboard"
+}

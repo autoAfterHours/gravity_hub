@@ -1,0 +1,313 @@
+/* styles.qss — Orbit360 v4.0
+   Dark theme inspired by Catppuccin Mocha
+*/
+
+QMainWindow {
+    background-color: #1e1e2e;
+}
+
+QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: "Segoe UI", "SF Pro Display", "Inter", sans-serif;
+    font-size: 13px;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+QLabel#headerLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #89b4fa;
+    padding: 14px 0px 4px 0px;
+    letter-spacing: 1px;
+}
+
+QLabel#subheaderLabel {
+    font-size: 11px;
+    color: #6c7086;
+    padding-bottom: 10px;
+}
+
+/* ── General labels ─────────────────────────────────────── */
+QLabel {
+    color: #a6adc8;
+    font-size: 12px;
+}
+
+/* ── Combo boxes ────────────────────────────────────────── */
+QComboBox {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 220px;
+    font-size: 13px;
+}
+
+QComboBox:hover {
+    border-color: #89b4fa;
+}
+
+QComboBox:focus {
+    border-color: #89b4fa;
+    outline: none;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+
+QComboBox::down-arrow {
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #313244;
+    color: #cdd6f4;
+    selection-background-color: #45475a;
+    selection-color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+QPushButton {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 90px;
+}
+
+QPushButton:hover {
+    background-color: #b4d0ff;
+}
+
+QPushButton:pressed {
+    background-color: #74a0e8;
+}
+
+QPushButton:disabled {
+    background-color: #313244;
+    color: #585b70;
+}
+
+QPushButton#abortButton {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+QPushButton#abortButton:hover {
+    background-color: #f5a0b8;
+}
+
+QPushButton#abortButton:disabled {
+    background-color: #313244;
+    color: #585b70;
+}
+
+QPushButton#continueButton {
+    background-color: #fab387;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+QPushButton#continueButton:hover {
+    background-color: #fcc9a0;
+}
+
+/* ── Script list ─────────────────────────────────────────── */
+QListWidget {
+    background-color: #181825;
+    color: #cdd6f4;
+    border: 1px solid #313244;
+    border-left: 3px solid #89b4fa;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 13px;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+QListWidget::item:selected {
+    background-color: #45475a;
+    color: #cdd6f4;
+}
+
+QListWidget::item:hover {
+    background-color: #313244;
+}
+
+/* ── Log output ─────────────────────────────────────────── */
+QPlainTextEdit {
+    background-color: #11111b;
+    color: #a6e3a1;
+    border: 1px solid #313244;
+    border-radius: 5px;
+    font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas", "Courier New", monospace;
+    font-size: 12px;
+    padding: 8px;
+    selection-background-color: #45475a;
+    selection-color: #cdd6f4;
+}
+
+/* ── Separators ─────────────────────────────────────────── */
+QFrame[frameShape="4"],
+QFrame[frameShape="5"] {
+    color: #313244;
+}
+
+/* ── Status bar ─────────────────────────────────────────── */
+QStatusBar {
+    background-color: #181825;
+    color: #6c7086;
+    font-size: 11px;
+    border-top: 1px solid #313244;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* ── Scrollbars ─────────────────────────────────────────── */
+QScrollBar:vertical {
+    background-color: #1e1e2e;
+    width: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #45475a;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #585b70;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background-color: #1e1e2e;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #45475a;
+    border-radius: 4px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #585b70;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* ── Run progress bar (thin accent strip in status bar) ─────────────────── */
+QProgressBar {
+    background:    #313244;   /* Surface0 — matches panel bg */
+    border:        none;
+    border-radius: 2px;
+}
+QProgressBar::chunk {
+    background:    #89b4fa;   /* Blue */
+    border-radius: 2px;
+}
+
+/* ── Screenshot strip ───────────────────────────────────────────────────── */
+QScrollArea#screenshotStrip {
+    background: #181825;
+    border-top: 1px solid #313244;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+QWidget#ssContainer {
+    background: #181825;
+}
+
+/* ── Swimlane (parallel log view) ──────────────────────────────────────── */
+QScrollArea#swimlaneScroll {
+    background: #181825;
+    border: none;
+}
+QWidget#swimlaneContainer {
+    background: #181825;
+}
+QWidget#lanePanel {
+    background: #181825;
+    border-right: 1px solid #313244;
+}
+QWidget#laneHeader {
+    background: #1e1e2e;
+    border-bottom: 1px solid #313244;
+}
+QPlainTextEdit#laneEditor {
+    background: #181825;
+    color: #cdd6f4;
+    border: none;
+    selection-background-color: #45475a;
+}
+
+/* ── Test Data panel ──────────────────────────────────────────────────────── */
+QWidget#testDataPanel {
+    background-color: #181825;
+    border-top: 1px solid #313244;
+    border-bottom: 1px solid #313244;
+}
+
+QTableWidget#testDataTable {
+    background-color: #181825;
+    alternate-background-color: #1e1e2e;
+    color: #cdd6f4;
+    border: none;
+    gridline-color: #2a2a3d;
+    font-size: 12px;
+    selection-background-color: #45475a;
+    selection-color: #cdd6f4;
+    outline: none;
+}
+
+QTableWidget#testDataTable QHeaderView::section {
+    background-color: #24273a;
+    color: #89b4fa;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: none;
+    border-right: 1px solid #313244;
+    border-bottom: 2px solid #89b4fa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+QTableWidget#testDataTable QHeaderView::section:last {
+    border-right: none;
+}
+
+QPushButton#testDataResetBtn {
+    background-color: #45475a;
+    color: #cdd6f4;
+    font-size: 11px;
+    padding: 2px 8px;
+}

@@ -1,0 +1,12 @@
+{
+    "san_prod_app3.py": "CRS Codefinder",
+    "san_prod_app5.py": "CRS Config Utility",
+    "san_prod_web1.py": "WinAppLink",
+    "san_prod_web2.py": "WebCvConfig",
+    "san_prod_web4.py": "STS Version Info",
+    "san_prod_web5_core.py": "CAC Core Functionality",
+    "san_prod_web5_himcoding.py": "HIM Coding Dashboard",
+    "san_prod_web5_himcharger.py": "HIM Charger Dashboard",
+    "san_prod_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "san_prod_web5_cdi.py": "CDI Dashboard"
+}

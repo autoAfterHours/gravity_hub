@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PLACEHOLDER — Replace with your actual UiPath workflow.
+  See Registration/workflows/ comments for Orbit argument conventions.
+-->
+<Activity mc:Ignorable="sads"
+  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugging/symbol"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence DisplayName="Placeholder" />
+</Activity>

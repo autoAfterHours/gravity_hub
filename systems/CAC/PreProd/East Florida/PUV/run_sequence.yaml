@@ -1,0 +1,31 @@
+sequence:
+  - script: efd_preprod_app3.py
+    display: CRS Codefinder
+    description: Runs the primary CRS validation sequence.
+  - script: efd_preprod_app5.py
+    display: CRS COnfig Utility
+    description: Validates configuration utility and parameter setup.
+  - script: efd_preprod_web1.py
+    display: WinAppLink
+    description: Runs the primary CRS validation sequence.
+  - script: efd_preprod_web2.py
+    display: WebCvConfig
+    description: Verifies web configuration and connection parmeters.
+  - script: efd_preprod_web4.py
+    display: STS Version Info
+    description: Confirms application build and version details.
+  - script: efd_preprod_web5_core.py
+    display: CAC Core Functionality
+    description: Walks through core post update validation steps.
+  - script: efd_preprod_web5_himcoding.py
+    display: HIM Coding Dashboard
+    description: Walks through core post update validation steps.
+  - script: efd_preprod_web5_himcharger.py
+    display: HIM Charger Dashboard
+    description: Walks through core post update validation steps.
+  - script: efd_preprod_web5_concurrentcoding.py
+    display: Concurrent Coding Dashboard
+    description: Walks through core post update validation steps.
+  - script: efd_preprod_web5_cdi.py
+    display: CDI Dashboard
+    description: Walks through core post update validation steps.

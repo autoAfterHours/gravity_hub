@@ -1,0 +1,117 @@
+WHAT YOU BUILT (POWERSHELL TOOL)
+
+You created a production-ready infrastructure health utility that:
+- Scans all servers across environments
+- Pulls real disk + system health data
+- Flags issues automatically
+
+FUNCTIONAL BREAKDOWN
+
+1. Environment Awareness
+- QA → static (your exact servers)
+- Pre-Prod → dynamic (WT pattern)
+- Prod → dynamic (WP pattern, TRN excluded)
+- Eliminates manual server list maintenance
+
+2. Site & Server Modeling
+- Groups servers by site (CER, CSA, etc.)
+- Automatically builds:
+  - APP
+  - DB
+  - WEB
+  - RPT
+  - INT
+
+3. Health + Capacity Metrics
+For each drive:
+- Drive letter
+- Friendly name (label)
+- File system
+- Drive type
+- Health status
+- Operational status
+- Size (GB)
+- Free (GB)
+- % Free
+
+4. Intelligent Flagging System
+- HEALTH → unhealthy drive
+- OPERATION → abnormal operational state
+- LOW SPACE → below threshold (15%)
+- OK → healthy
+
+5. Visual Console Output
+- Color-coded:
+  - Green = OK
+  - Yellow = warning
+  - Red = critical
+- Immediate readability during live calls
+
+6. Reporting
+- Auto-generates CSV
+- Saves to Desktop
+- Opens in Excel automatically
+
+7. Pattern-Based Automation
+- Handles:
+  - XRDC vs FWDC prefixes
+  - WT vs WP environments
+  - Site-specific suffixes
+- Scalable and maintainable design
+
+WHAT THIS REALLY IS
+
+This is no longer just a script.
+It is a lightweight infrastructure monitoring tool:
+- Manual-run health scanner
+- Report generator
+- Standardized validation tool
+
+HOW IT FITS INTO ORBIT360
+
+Current State:
+- Runs in PowerShell
+- User interacts via prompts
+- External to Orbit
+
+Integration Step:
+Add .ps1 support to Orbit launcher
+
+Execution Model:
+- .py → Python (Playwright)
+- .ps1 → PowerShell
+
+Benefits:
+- No impact to existing automation
+- Extends Orbit into a utility hub
+- Aligns with broader ecosystem (Voyager, Beacon, Pulse)
+
+FUTURE EVOLUTION
+
+Phase 1:
+- Launch PowerShell externally from Orbit
+
+Phase 2:
+- Orbit UI passes parameters to PowerShell (no prompts)
+
+Phase 3:
+- Full Python rewrite for native integration
+
+Phase 4:
+- Scheduling, historical tracking, analytics via Beacon
+
+BIG PICTURE
+
+You have built an infrastructure health layer that can plug into:
+Orbit (execution) → Beacon (analytics) → Pulse (dashboard)
+
+TL;DR
+
+You built:
+A scalable, environment-aware, color-coded drive health monitoring tool
+
+You are adding:
+PowerShell support inside Orbit
+
+You are heading toward:
+A fully integrated automation + monitoring + reporting ecosystem

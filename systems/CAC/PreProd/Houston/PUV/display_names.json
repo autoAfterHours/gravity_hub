@@ -1,0 +1,12 @@
+{
+    "hou_preprod_app3.py": "CRS Codefinder",
+    "hou_preprod_app5.py": "CRS Config Utility",
+    "hou_preprod_web1.py": "WinAppLink",
+    "hou_preprod_web2.py": "WebCvConfig",
+    "hou_preprod_web4.py": "STS Version Info",
+    "hou_preprod_web5_core.py": "CAC Core Functionality",
+    "hou_preprod_web5_himcoding.py": "HIM Coding Dashboard",
+    "hou_preprod_web5_himcharger.py": "HIM Charger Dashboard",
+    "hou_preprod_web5_concurrentcoding.py": "Concurrent Coding Dashboard",
+    "hou_preprod_web5_cdi.py": "CDI Dashboard"
+}
